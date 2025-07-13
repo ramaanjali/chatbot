@@ -1,0 +1,40 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart AI ChatBot</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<div class="chat-container">
+  <div class="chat-header">
+    🤖 Smart AI ChatBot
+    <span class="pet"></span>
+  </div>
+
+  <div class="chat-box" id="chatBox"></div>
+
+  <div class="chat-input-area">
+    <div class="input-row">
+      <textarea id="userInput" placeholder="Typing...."></textarea>
+      <button class="send-btn" onclick="sendMessage()"><i class='bxr  bx-arrow-up-stroke'  ></i> </button>
+    </div>
+    <div class="button-row">
+      <button onclick="startVoice()"><i class='bxr  bx-microphone-alt'  ></i> </button>
+      <button onclick="openCamera()"><i class='bxr  bx-camera-alt'  ></i> </button>
+      <button onclick="uploadFile()"><i class='bxr  bx-folder-open'  ></i> </button>
+      <button onclick="clearChat()"><i class='bxr  bx-trash-x'  ></i> </button>
+    </div>
+  </div>
+
+
+<input type="file" id="fileInput" style="display: none;" />
+<video id="camera" autoplay style="display: none;"></video>
+
+<script src="script.js"></script>
+</body>
+</html>
